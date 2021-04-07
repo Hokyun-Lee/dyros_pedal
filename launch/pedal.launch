@@ -1,0 +1,12 @@
+<launch>
+ <!-- pedal node -->
+  <node respawn="true" pkg="joy"
+        type="joy_node" name="joystick" >
+    <param name="dev" type="string" value="/dev/input/js0" />
+    <param name="autorepeat_rate" value="30" />
+    <param name="deadzone" value="0.12" />
+  </node>
+
+ <!-- Axes -->
+  <node pkg="dyros_pedal" type="dyros_pedal" name="dyros_pedal" output="screen"/>
+</launch>
