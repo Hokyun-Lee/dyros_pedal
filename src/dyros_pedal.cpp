@@ -45,9 +45,9 @@ void DyrosPedal::pedalCallback(const sensor_msgs::Joy::ConstPtr& pedal)
 
     // if (walk_cmd_ ==true)
     walking_cmd_pub_.publish(walk_cmd_msg_);
-    std::cout << "step_length : " << walk_cmd_msg_.step_length_x << std::endl;
-    std::cout << "trigger(z) : " << walk_cmd_msg_.z << std::endl;
-    std::cout << "theta : " << walk_cmd_msg_.theta << std::endl << std::endl;
+    // std::cout << "step_length : " << walk_cmd_msg_.step_length_x << std::endl;
+    // std::cout << "trigger(z) : " << walk_cmd_msg_.z << std::endl;
+    // std::cout << "theta : " << walk_cmd_msg_.theta << std::endl << std::endl;
 
 }
 
