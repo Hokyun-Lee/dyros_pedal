@@ -3,11 +3,10 @@
 // ROS LIBRARY
 #include <ros/ros.h>
 // ROS MESSAGE
-#include <dyros_pedal/WalkingCommand.h>
 #include <std_msgs/Float32.h>
 #include <sensor_msgs/Joy.h>
-    
 
+#include "tocabi_msgs/WalkingCommand.h"
 
 class DyrosPedal
   {
@@ -21,7 +20,7 @@ class DyrosPedal
     ros::Subscriber pedal_sub_;
     bool walk_cmd_;
     bool walk_cmd_pre_;
-    dyros_pedal::WalkingCommand walk_cmd_msg_;
+    tocabi_msgs::WalkingCommand walk_cmd_msg_;
   };
  
 

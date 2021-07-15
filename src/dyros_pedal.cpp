@@ -2,7 +2,7 @@
 
 DyrosPedal::DyrosPedal()
 {
-    walking_cmd_pub_ = nh_.advertise<dyros_pedal::WalkingCommand>("/tocabi/pedalcommand", 100);
+    walking_cmd_pub_ = nh_.advertise<tocabi_msgs::WalkingCommand>("/tocabi/pedalcommand", 100);
     pedal_sub_ = nh_.subscribe<sensor_msgs::Joy>("joy", 10, &DyrosPedal::pedalCallback, this);
     
 }
